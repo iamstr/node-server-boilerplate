@@ -3,7 +3,6 @@
   "description": "This is a refactored a Node.js server with a  number of routes is to organize the routes into separate files and we are using  the ```express.Router``` class to create route handlers for each file. This allows you to organize your code and make it more modular and maintainable. The other feature of this boiler plate is : * It also handles exceptions and errors gracefully by using try-catch blocks and the ```app.use()``` method to define error-handling middleware.  This will prevent unhandled exceptions from crashing your server and ensure that any errors are logged and dealt with properly. * Lastly it uses a  Winston library as the logging library, to log events and errors in your server. This will provide you with valuable information about what is happening in your server and help you identify and fix problems.",
   "version": "1.0.0",
   "main": "y",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/iamstr/node-server-boilerplate.git"
@@ -25,8 +24,18 @@
   },
   "dependencies": {
     "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "jsonwebtoken": "^8.5.1",
+    "mysql2": "^3.1.2",
     "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.34.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.4"
   }
 }
